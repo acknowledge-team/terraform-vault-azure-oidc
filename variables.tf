@@ -34,7 +34,7 @@ variable "oidc_discovery_url" {
 variable "user_claim" {
   description = "User claim to use for user mapping"
   type        = string
-  default     = "sub"
+  default     = "email"
 }
 
 variable "groups_claim" {
