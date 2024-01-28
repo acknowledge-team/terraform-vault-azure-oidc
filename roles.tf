@@ -23,5 +23,5 @@ resource "vault_jwt_auth_backend_role" "roles" {
   allowed_redirect_uris = var.allowed_redirect_uris
   oidc_scopes           = ["https://graph.microsoft.com/.default", "https://graph.microsoft.com/profile", "https://graph.microsoft.com/openid", "https://graph.microsoft.com/User.Read"]
   role_type             = "oidc"
-  claim_mappings        = { "email": "email", "iss": "iss" }
+  claim_mappings        = { "email": "email", "given_name": "given_name" }
 }
