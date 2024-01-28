@@ -52,3 +52,8 @@ variable "teams" {
   description = "A set containing all teams to create namespaces, policies and roles definition"
   type        = map(any)
 }
+
+variable "verbose_oidc_logging" {
+  description = "Enable verbose oidc logging"
+  default     = false
+}
