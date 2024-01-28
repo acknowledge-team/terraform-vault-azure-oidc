@@ -18,7 +18,6 @@ variable "oidc_default_role" {
 
 variable "oidc_client_id" {
     description = "Azure OIDC client ID"
-    default = ""
     type = string
 }
 
