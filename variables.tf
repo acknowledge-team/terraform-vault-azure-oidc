@@ -48,9 +48,9 @@ variable "allowed_redirect_uris" {
   type        = list(any)
 }
 
-variable "team" {
-  description = "A string containing team name"
-  type        = string 
+variable "teams" {
+  description = "A map containing teams"
+  type        = map(any) 
 }
 
 variable "policy_name" {
