@@ -50,7 +50,7 @@ variable "allowed_redirect_uris" {
 
 variable "teams" {
   description = "A map containing teams"
-  type        = map(any) 
+  type        = map(any)
 }
 
 variable "verbose_oidc_logging" {
