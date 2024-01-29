@@ -48,9 +48,19 @@ variable "allowed_redirect_uris" {
   type        = list(any)
 }
 
-variable "teams" {
-  description = "A set containing all teams to create namespaces, policies and roles definition"
-  type        = map(any)
+variable "team" {
+  description = "A string containing team name"
+  type        = string 
+}
+
+variable "policy_name" {
+  description = "The name of the policy associated to oidc role"
+  type = list()
+}
+
+variable "azure_group_id" {
+  description = "The object id of azure group associated to the oidc role"
+  type = string
 }
 
 variable "verbose_oidc_logging" {

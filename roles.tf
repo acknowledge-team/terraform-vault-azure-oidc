@@ -13,10 +13,9 @@ resource "vault_jwt_auth_backend_role" "default" {
 
 # All others roles are defined with below resource declaration
 resource "vault_jwt_auth_backend_role" "roles" {
-  for_each       = var.teams
   backend        = vault_jwt_auth_backend.oidc.path
-  role_name      = each.key
-  token_policies = [each.key]
+  role_name      = var.team 
+  token_policies = ["default"] 
 
   user_claim            = var.user_claim
   groups_claim          = var.groups_claim
