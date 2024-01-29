@@ -53,16 +53,6 @@ variable "teams" {
   type        = map(any) 
 }
 
-variable "policy_name" {
-  description = "The name of the policy associated to oidc role"
-  type = list()
-}
-
-variable "azure_group_id" {
-  description = "The object id of azure group associated to the oidc role"
-  type = string
-}
-
 variable "verbose_oidc_logging" {
   description = "Enable verbose oidc logging"
   default     = false
